@@ -3,7 +3,8 @@
 
 1. import the dependencies
 My main file:
-```import queries
+```
+import queries
 import cherrypy
 from bottle import get, post, route, run, response
 ```
