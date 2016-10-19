@@ -5,7 +5,8 @@
 My main file:
 ```import queries
 import cherrypy
-from bottle import get, post, route, run, response```
+from bottle import get, post, route, run, response
+```
 My queries file(seperates the db related stuff):
 `import psycopg2`
 1. Connect to the postgres db:
@@ -14,7 +15,8 @@ try:
     conn = psycopg2.connect("dbname='kittens' user='Austin' host='localhost'")
     db = conn.cursor()
 except:
-    print("I am unable to connect to the database")```
+    print("I am unable to connect to the database")
+```
 1. A simple route: 
 ```
 @get('/')
